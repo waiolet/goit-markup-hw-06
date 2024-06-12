@@ -768,19 +768,12 @@ footer {
     margin-left: 4px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px){
     .container {
         width: 320px;
         padding: 0 16px;
     }
 
-    .container-one {
-
-    }
-
-    .section-one {
-        padding: 58px 0;
-    }
 
     .titel-one {
         font-size: 36px;
@@ -858,10 +851,54 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+    .container {
+        width: 736px;
+        padding: 0 16px;
+    }
+
+    .titel-one {
+        font-size: 56px;
+        max-width: 496px;
+    }
+
+    .section-two {
+        padding: 96px 0;
+    }
+
+    .section-two-icons {
+        visibility: hidden;
+    }
+
+    .section-two-list {
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 24px;
+        column-gap: 72px;
+    }
+
+    .section-two-list-item {
+        width: calc((100%- 24px)/2);
+    }
+
+    .titel-three-mobile {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        
+    }
 
 
+    .section-three-list {
+        flex-wrap: wrap;
+        row-gap: 24px;
+        column-gap: 64px;
+    }
 
 
+    .section-three-list-item {
+        width: 264px;
+    }
 }
 
 
