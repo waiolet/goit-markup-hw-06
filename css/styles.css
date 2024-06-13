@@ -911,6 +911,28 @@ footer {
     .section-four-list-item {
         width: calc((100% - 24px) / 2);
     }
+
+    .address-list {
+        display: block;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        padding-left: 92px;
+        padding-bottom: 96px;
+        padding-top: 96px;
+
+    }
+    
+    .footer-el-one,
+    .footer-el-two,
+    .footer-el-three {
+        margin: 0;
+        
+
+
 }
 
 
