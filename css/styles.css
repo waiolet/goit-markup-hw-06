@@ -872,12 +872,12 @@ footer {
     .section-two-list {
         flex-wrap: wrap;
         gap: 0;
-        row-gap: 24px;
-        column-gap: 72px;
+        row-gap: 72px;
+        column-gap: 24px;
     }
 
     .section-two-list-item {
-        width: calc((100%- 24px)/2);
+        width: calc((100% - 24px) / 2);
     }
 
     .titel-three-mobile {
@@ -893,22 +893,25 @@ footer {
         flex-wrap: wrap;
         row-gap: 24px;
         column-gap: 64px;
+        justify-content: center;
     }
 
 
     .section-three-list-item {
         width: 264px;
     }
+
+    .section-four-list {
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+        justify-content: center;
+    }
+
+    .section-four-list-item {
+        width: calc((100% - 24px) / 2);
+    }
 }
 
 
 
-
-
-@media screen and (min-width: 1158px) {
-
-
-
-
-
-}
