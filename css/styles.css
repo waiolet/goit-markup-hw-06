@@ -952,23 +952,31 @@ footer {
     }
     
     .footer-container {
+        width: 100%;
         max-width: 320px;
         padding: 0 16px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        gap: 72px;
+        align-items: center;
+        justify-content: center;
         
     }
 
     .footer-el-one,
     .footer-el-two,
     .footer-el-three {
+        margin: 0;
         display: block;
         margin-bottom: 72px;
+        width: 100%
+        
     }
 
     .soc-net-footer {
         display: flex;
+        justify-content: center;
         
     }
     
@@ -983,6 +991,10 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .logo-footer {
+        width: 100%
     }
 
     .modal {
