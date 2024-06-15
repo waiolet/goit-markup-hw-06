@@ -32,7 +32,67 @@
             <li><a class="address-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+    <button type="button" class="icon-mob-menu"><svg width="24" height="24">
+      <use href="./images/icons.svg#icon-menu"></use>
+    </svg></button>
     </div>
+
+    <div class="mob-menu-container is-open">
+      <button type="button" class="button-close btn-close-mob-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/section-two.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav class="mob-nav-menu">
+        <ul class="mob-nav-list">
+          <li class="mob-nav-list-item">
+            <a class="mob-nav-item active-item" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-nav-list-item"><a class="mob-nav-item" href="">Portfolio</a></li>
+          <li class="mob-nav-list-item"><a class="mob-nav-item" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address>
+        <ul class="mob-address-list">
+          <li class="mob-address"><a class="mob-address-item tel-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="mob-address"><a class="mob-address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+      </address>
+      <ul class="soc-net-footer mob-soc-net">
+        <li class="item">
+          <a class="media-link-footer" href="link">
+            <svg class="icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a class="media-link-footer" href="link">
+            <svg class="icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a class="media-link-footer" href="link">
+            <svg class="icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a class="media-link-footer" href="link">
+            <svg class="icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        </ul>
+      </div>
+    
+  
+    </div>
+
   </header>
 
   <main>
@@ -106,7 +166,8 @@
           <h2 class="titel-two">Our Team</h2>
           <ul class="section-three-list">
             <li class="section-three-list-item">
-              <img src="./images/pic-1.jpg" alt="Mark Guerrero Photo" width="264"/>
+              <img srcset="./images/pic-1.jpg 1x, ./images/pic-1-2x.jpg 2x"
+                src="./images/pic-1.jpg" alt="Mark Guerrero Photo" width="264"/>
               <div class="section-three-list-item-text">
                 <h3 class="titel-three">Mark Guerrero</h3>
                 <p class="paragraph">Product Designer</p>
@@ -142,7 +203,8 @@
               </div>
             </li>
             <li class="section-three-list-item">
-              <img src="./images/pic-2.jpg" alt="Tom Ford Photo" width="264" />
+              <img srcset="./images/pic-2.jpg 1x, ./images/pic-2-2x.jpg 2x"
+                src="./images/pic-2.jpg" alt="Tom Ford Photo" width="264" />
               <div class="section-three-list-item-text">
                 <h3 class="titel-three">Tom Ford</h3>
                 <p class="paragraph">Frontend Developer</p> 
@@ -178,7 +240,8 @@
               </div>
             </li>
             <li class="section-three-list-item">
-              <img src="./images/pic-3.jpg" alt="Camila Garcia Photo" width="264" /> 
+              <img srcset="./images/pic-3.jpg 1x, ./images/pic-3-2x.jpg 2x"
+                src="./images/pic-3.jpg" alt="Camila Garcia Photo" width="264" /> 
               <div class="section-three-list-item-text">
                 <h3 class="titel-three">Camila Garcia</h3>
                 <p class="paragraph">Marketing</p>  
@@ -213,7 +276,8 @@
               </div>
             </li>
             <li class="section-three-list-item">
-              <img src="./images/pic-4.jpg" alt="Daniel Wilson Photo" width="264"/>
+              <img srcset="./images/pic-4.jpg 1x, ./images/pic-4-2x.jpg 2x"
+                src="./images/pic-4.jpg" alt="Daniel Wilson Photo" width="264"/>
               <div class="section-three-list-item-text">
                 <h3 class="titel-three">Daniel Wilson</h3>
                 <p class="paragraph">UI Designer</p> 
@@ -257,7 +321,8 @@
         <h2 class="titel-two">Our Portfolio</h2>
         <ul class="section-four-list">
           <li class="section-four-list-item">
-            <div class="section-four-list-img"><img src="./images/portfolio-img1.jpg" alt="Banking App Example" width="360">
+            <div class="section-four-list-img"><img srcset="./images/portfolio-img1.jpg 1x, ./images/portfolio-img1-2x.jpg 2x"
+                src="./images/portfolio-img1.jpg" alt="Banking App Example" width="360">
               <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit Ecommerce App ·
                 Cloud Storage App</p>
@@ -268,7 +333,8 @@
             </div>  
           </li>
           <li class="section-four-list-item">
-            <div class="section-four-list-img"><img src="./images/portfolio-img2.jpg" alt="Contactless Payment by Phone" width="360">
+            <div class="section-four-list-img"><img srcset="./images/portfolio-img2.jpg 1x, ./images/portfolio-img2-2x.jpg 2x"
+                src="./images/portfolio-img2.jpg" alt="Contactless Payment by Phone" width="360">
               <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit Ecommerce App ·
                 Cloud Storage App</p>
@@ -279,7 +345,8 @@
             </div>    
           </li>
           <li class="section-four-list-item">
-            <div class="section-four-list-img"><img src="./images/portfolio-img3.jpg" alt="Meditaion App for PC and Smartphone" width="360">
+            <div class="section-four-list-img"><img srcset="./images/portfolio-img3.jpg 1x, ./images/portfolio-img3-2x.jpg 2x"
+                src="./images/portfolio-img3.jpg" alt="Meditaion App for PC and Smartphone" width="360">
               <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
               Fruit Ecommerce App ·
               Cloud Storage App</p>
@@ -290,7 +357,8 @@
             </div>
           </li>
           <li class="section-four-list-item">
-            <div class="section-four-list-img"><img src="./images/portfolio-img4.jpg" alt="Taxi Driver using a Navigation App" width="360">
+            <div class="section-four-list-img"><img srcset="./images/portfolio-img4.jpg 1x, ./images/portfolio-img4-2x.jpg 2x"
+                src="./images/portfolio-img4.jpg" alt="Taxi Driver using a Navigation App" width="360">
               <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit Ecommerce App ·
                 Cloud Storage App</p>
@@ -301,7 +369,8 @@
             </div>
           </li>
           <li class="section-four-list-item">
-            <div class="section-four-list-img"><img src="./images/portfolio-img5.jpg" alt="Different Screen Illustrations" width="360">
+            <div class="section-four-list-img"><img srcset="./images/portfolio-img5.jpg 1x, ./images/portfolio-img5-2x.jpg 2x"
+                src="./images/portfolio-img5.jpg" alt="Different Screen Illustrations" width="360">
               <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit Ecommerce App ·
                 Cloud Storage App</p>
@@ -312,7 +381,8 @@
             </div>
           </li>
           <li class="section-four-list-item">
-            <div class="section-four-list-img"><img src="./images/portfolio-img6.jpg" alt="Woman using Smartphone" width="360">
+            <div class="section-four-list-img"><img srcset="./images/portfolio-img6.jpg 1x, ./images/portfolio-img6-2x.jpg 2x"
+                src="./images/portfolio-img6.jpg" alt="Woman using Smartphone" width="360">
               <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit Ecommerce App ·
                 Cloud Storage App</p>
