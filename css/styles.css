@@ -37,7 +37,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1158px;
-    width: 100%;
 }
 
 
@@ -154,7 +153,7 @@ h1, h2, h3, p {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 24px 156px;
+    
 }
 
 .address-item:hover,
@@ -780,10 +779,13 @@ footer {
     display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .container {
-        width: 320px;
-        padding: 0 16px;
+        max-width: 320px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .icon-mob-menu {
@@ -855,8 +857,7 @@ footer {
     
     .container-header {
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;   
         
     }   
     
@@ -908,12 +909,12 @@ footer {
     }
     
     .body-section-two {
-        font-family: Roboto;
         font-size: 16px;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: left;
+        
     }
 
     .section-two-list {
@@ -923,6 +924,10 @@ footer {
 
     .section-two-list-item {
         width: 100%;
+    }
+
+    .section-three {
+        padding: 96px 0;
     }
 
     .titel-three-mobile {
@@ -939,7 +944,9 @@ footer {
         align-items: center;
     }
     
-    
+    .section-four {
+        padding: 96px 0;
+    }
 
     .section-four-list {
         flex-direction: column;
@@ -952,7 +959,6 @@ footer {
     }
     
     .footer-container {
-        width: 100%;
         max-width: 320px;
         padding: 0 16px;
         margin: 0 auto;
@@ -969,7 +975,6 @@ footer {
     .footer-el-three {
         margin: 0;
         display: block;
-        margin-bottom: 72px;
         width: 100%
         
     }
@@ -994,7 +999,7 @@ footer {
     }
 
     .logo-footer {
-        width: 100%
+        width: 100%;
     }
 
     .modal {
@@ -1006,27 +1011,17 @@ footer {
     .modal-titel {
         width: 256px;
     }
-/*
-    .footer-el-one, 
-    .footer-el-two,  
-    .footer-el-three {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-    }
- */
     
 }
-    
+
+   
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 
     .container {
-        width: 736px;
-        padding: 0 16px;
+        max-width: 768px;
+        
+        
     }
 
     .titel-one {
@@ -1036,6 +1031,15 @@ footer {
 
     .section-two {
         padding: 96px 0;
+    }
+ 
+    .body-section-two {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: left;
+
     }
 
     .section-two-icons {
@@ -1051,6 +1055,10 @@ footer {
 
     .section-two-list-item {
         width: calc((100% - 24px) / 2);
+    }
+
+    .section-three {
+        padding: 96px 0;
     }
 
     .titel-three-mobile {
@@ -1069,7 +1077,10 @@ footer {
         align-items: center;
         
     }
-
+    
+    .section-four {
+        padding: 96px 0;
+    }
 
     .section-four-list {
         flex-wrap: wrap;
@@ -1086,6 +1097,10 @@ footer {
         display: block;
     }
 
+    .address-item {
+        font-size: 12px;
+    }
+
     .footer-container {
         flex-wrap: wrap;
         column-gap: 24px;
@@ -1098,12 +1113,21 @@ footer {
     .footer-el-two,
     .footer-el-three {
         margin: 0;
-        
-
-
+    }
 }
 
+@media screen and (min-width: 1158px) {
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+    /* я не дуже розумію, навіщо дублювати знову всі стилі, які вже стоять за замовчуванням, 
+    якщо можна просто скинути стилі у планшетній версії при досягнення max-width */
 }
+
+
 
 @media screen and (min-resolution: 2dppx;) {
     .section-one {
